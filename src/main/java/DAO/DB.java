@@ -1,4 +1,4 @@
-package models;
+package DAO;
 
 public class DB {
 }
