@@ -76,5 +76,20 @@ public class Animal {
                             .throwOnMappingFailure(false)
                             .executeAndFetchFirst(Animal.class);
                 }
+            }
+
+            public  void update( String name){
+                if( name == null || name.trim().isEmpty()){
+                    throw new NullPointerException("name cannot be null or empty");
+                }
+                String sql = "UPDATE animals SET name = :name WHERE id = :id;";
+                try(Connection con = DB.sql2o.open()){
+                    con.createQuery(sql)
+                            .addParameter("name", name)
+                            .addParameter("id", this.id)
+                            .executeUpdate();
+                } catch (Sql2oException ex) {
+                    System.out.println(ex);
+                }
     }
 }
