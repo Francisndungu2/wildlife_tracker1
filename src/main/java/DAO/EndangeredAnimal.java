@@ -16,4 +16,23 @@ public class EndangeredAnimal extends Animal{
         this.health = health;
         this.age = age;
         this.type = DATABASE_TYPE;
+    } public String getHealth()
+    {
+        return health;
     }
+
+    public String getAge() {
+
+        return age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        EndangeredAnimal that = (EndangeredAnimal) o;
+        return Objects.equals(health, that.health) &&
+                Objects.equals(age, that.age);
+    }
+
