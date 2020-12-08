@@ -1,2 +1,16 @@
 App.java
  App
+models/Animal.java
+ models.Animal
+models/Database.java
+ models.Database
+interfaces/SightingInterface.java
+ interfaces.SightingInterface
+models/Sighting.java
+ models.Sighting
+interfaces/AnimalInterface.java
+ interfaces.AnimalInterface
+models/DatabaseManagement.java
+ models.DatabaseManagement
+models/Endanger.java
+ models.Endanger

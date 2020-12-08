@@ -1,0 +1,62 @@
+{{#partial "styles"}}
+    <link rel='stylesheet' href='/css/app.css'>
+{{/partial}}
+{{#partial "content"}}
+    <h1 class="header">WILDLIFE TRACKER</h1>
+    <br>
+    <br>
+    <br>
+    <h2>Animal Sighting</h2>
+    <form method="post" action="\view">
+        <div class="form-group">
+            <label for="rangerName">Ranger's Name</label>
+            <input type="text" id="rangerName" name="rangerName">
+        </div>
+        <hr>
+        <p>location</p>
+        <select name="sightingLocation" id="sightingLocation">
+            <option value="Zone1">Zone1</option>
+            <option value="Zone2">Zone2</option>
+            <option value="Zone3">Zone3</option>
+            <option value="Zone4">Zone4</option>
+            <option value="Zone5">Zone5</option>
+        </select>
+        <hr>
+        <div class="form-group">
+            <label for="animalName">Animal Name</label>
+            <input type="text" id="animalName" name="animalName">
+        </div>
+        <div class="form-group">
+            <p>Animal Age</p>
+            <select name="animalAge" id="animalAge">
+                <label for="animalAge">Animal Age</label>
+                <option value="newborn">Newborn</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Animal Health</p>
+            <select name="animalHealth" id="animalHealth">
+                <label for="animalHealth">Animal Health</label>
+                <option value="weak">ill</option>
+                <option value="weak">Weak</option>
+                <option value="healthy">Healthy</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Animal  Type</p>
+            <select name="animalType" id="animalType">
+                <label for="animalType">Animal Type</label>
+                <option value="safe">Safe</option>
+                <option value="endangered">Endangered</option>
+            </select>
+        </div>
+
+        <a href="/view"><button type="submit" class="btn btn-success" id="button">Submit</button>
+        </a>
+    </form>
+
+{{/partial}}
+{{> layout.hbs}}
+

@@ -1,0 +1,44 @@
+{{#partial "styles"}}
+    <link rel='stylesheet' href='/css/app.css'>
+{{/partial}}
+{{#partial "content"}}
+    <br>
+    <br>
+    <table class="table table-dark">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Ranger's Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Animal Name</th>
+            <th scope="col">Animal Age</th>
+            <th scope="col">Animal Health</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {{# each animals}}
+        <tr>
+            <th scope="row">{{id}}</th>
+                <td >{{animal_location}}</td>
+                <td>{{animal_name}}</td>
+                <td>{{animal_age}}</td>
+                <td>Null</td>
+            </tr>
+        {{/each}}
+
+
+    {{#each sightings}}
+
+        <tr>
+            <th scope="row">{{id}}</th>
+            <td>{{animal_location}}</td>
+            <td>{{animal_name}}</td>
+            <td>{{animal_age}}</td>
+            <td>{{animal_health}}</td>
+        </tr>
+    {{/each}}
+        </tbody>
+    </table>
+    <a class="btn btn-success" href="/clearAll">Clear All</a>
+{{/partial}}
+{{> layout.hbs}}
