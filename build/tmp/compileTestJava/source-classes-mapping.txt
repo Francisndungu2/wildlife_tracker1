@@ -1,0 +1,8 @@
+models/SightingTest.java
+ models.SightingTest
+models/EndangerTest.java
+ models.EndangerTest
+models/AnimalTest.java
+ models.AnimalTest
+models/DatabaseRule.java
+ models.DatabaseRule

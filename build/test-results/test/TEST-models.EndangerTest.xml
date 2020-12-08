@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.EndangerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-12-08T03:09:17" hostname="hp-franc" time="0.013">
+  <properties/>
+  <testcase name="getAnimal_health" classname="models.EndangerTest" time="0.001"/>
+  <testcase name="getLocation" classname="models.EndangerTest" time="0.0"/>
+  <testcase name="getAnimal_age" classname="models.EndangerTest" time="0.0"/>
+  <testcase name="getAnimal_name" classname="models.EndangerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
